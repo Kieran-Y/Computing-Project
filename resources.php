@@ -11,7 +11,7 @@
 <html>
 <head>
 
-<title>resources | Work Ex</title>
+<title>Log | Work Ex</title>
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
 <!-- CSS Files -->
@@ -30,7 +30,6 @@
 <!-- Google Fonts -->
 <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic" />
 
-<!-- This CSS makes the user avatar a circle -->
 <style type="text/css">
 		.avatar {
 				border-radius: 50%;
@@ -73,23 +72,31 @@
 	</nav>
 </div>
 
-<!-- Dashboard section -->
-<div id="dashboard">
-	<div class="container">
-		<div class="row">
-		</br></br>
-			<!-- /.intro content -->
-			<div class="col-md-8 wow">
-				<ol class="breadcrumb">
-					<li class="active">Your Dashboard</li></br>
-					<?php echo('<img class="avatar" src="data:image/png;base64,'.$_SESSION["avatar"].'" />'); ?>Hi there, <?php echo($_SESSION["fullname"]); ?>.</br>
-				</ol>
-				<p>Welcome to your Work Experience Management System.</br>
-					Use the tabs above to navigate to different sections.
-			</div>
+<!-- /.content section -->
+<div id="content">
+	<div class="contact fullscreen parallax" style="background-color: white; margin-top: 25px;" data-img-width="2000" data-img-height="1334" data-diff="100">
+		<div class="overlay" style="color: black; background-color: white;">
+			<div class="container">
+				<div class="row">
 
-			<div class="col-md-3 wow">
-					<!-- Sidebar goes here -->
+					<div class="col-md-7 wow fadeInUp">
+						<h2><span class="highlight">Extra Resources</span></h2>
+					</div>
+					<div class="col-md-1 wow fadeInUp"></div>
+
+					<div class="col-md-3 wow fadeInUp">
+						<div id="dashboard">
+							<div class="container">
+								<div class="row">
+								</br></br>
+									<!-- /.intro content -->
+									<div class="col-md-4 wow">
+										<ol class="breadcrumb">
+											<li class="active">Currently logged in as: </li></br>
+											<?php echo('<img class="avatar" src="data:image/png;base64,'.$_SESSION["avatar"].'" />'); ?>   <?php echo($_SESSION["fullname"]); ?></br>
+										</ol>
+									</div>
+				</div>
 			</div>
 		</div>
 	</div>
